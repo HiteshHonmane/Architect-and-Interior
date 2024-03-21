@@ -1,59 +1,51 @@
-/* CSS */
-@keyframes moveBg {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .animate-bg img {
-    animation: moveBg 10s linear infinite;
-  }
-   img{
-    background-image: url(https://framerusercontent.com/images/TlNK8dgFohSyX6akaMAsIrmg.jpg?scale-down-to=1024);
-    transform: translateY();
-    animation: slideRightToLeft 10s linear infinite;
-  }
+@font-face {
+  font-family: "R0Y7TnVuaXRvIFNhbnMtOTAw";
+  src: url('path/to/your/font.woff2'); /* Replace 'path/to/your/font.woff2' with the actual path to your font file */
+}
 
-  @keyframes slideRightToLeft {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+.image-loop {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 0;
+  position: absolute;
+  flex-direction: row;
+  overflow: hidden; /* Hide overflowing images */
+}
 
-  /* .image-loop {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    place-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    gap: 0;
-    position: relative;
-    flex-direction: row;
-    overflow: hidden; 
-    
-  } */
-  
-  /* .absolute {
-    flex-shrink: 0;
-    animation: slideRightToLeft 10s linear infinite; /
-  } */
-  
-  @keyframes slideRightToLeft {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+.image-loop li {
+  flex-shrink: 0;
+  animation: slideRightToLeft 10s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(0);
   }
-  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+h1{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 15vw; 
+  z-index: 1;
+  top: 60px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  mix-blend-mode: lighten;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+}

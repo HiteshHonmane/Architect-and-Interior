@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Avenir: ["Avenir"],
-        AvenirLight: ["AvenirLight"],
-        AvenirRoman: ["AvenirRoman"],
-        AvenirHeavy:["AvenirHeavy"],
-        AvenirMedium :['AvenirMedium'],
-        Valencia: ["Valencia"],
-        Brucken: ['Brucken']
+        'nunito-sans': ['Nunito Sans', 'sans-serif'],
+      },
+      fontWeight: {
+        'nunito-sans': ['200', '400', '600', '800'],
+      },
+      fontStyle: {
+        'nunito-sans': ['italic'],
       },
       
       fontSize: {

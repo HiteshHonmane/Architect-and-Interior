@@ -6,7 +6,7 @@ function Home() {
     <div className=" relative h-screen w-screen overflow-hidden">
 
       {/* Navbar */}
-      <nav className=" flex justify-between absolute z-10 sm:h-[63px] w-full bg-[#F8F8F5] ">
+      <nav className=" fixed flex justify-between  z-10 sm:h-[63px] w-full bg-[#F8F8F5] ">
         <div id="logo">
           <img src="src\assets\logo\pilors.png" width="180px" alt="" />
         </div>

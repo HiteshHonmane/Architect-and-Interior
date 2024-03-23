@@ -8,7 +8,7 @@ function Home() {
       {/* Navbar */}
       <nav className=" fixed flex justify-between  z-10 sm:h-[63px] w-full bg-[#F8F8F5] ">
         <div id="logo">
-          <img src="src\assets\logo\pilors.png" width="170px" alt="" />
+          <img src="public/logo/pilors.png" width="170px" alt="" />
         </div>
         <ul id="nav-itmes" className="flex gap-4 items-center px-4 ">
           <li>HOME</li>
@@ -48,7 +48,7 @@ function Home() {
             />
           </li>
         </ul>
-        <h1 className=" text-10xl font-nunito-sans"> PILORS </h1>
+        <h1 className=" text-10xl font-nunito-sans "> PILORS </h1>
         <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex text-[68px] leading-[1em]  z-20 ">
       WE BLEND ART & SCIENCE <br /> TO CREATE <br /> ARCHITECTURAL MAGIC.
       </section>

@@ -1,14 +1,15 @@
 import React from "react";
 import "./Home.css";
+import Button from '../button/Button'
 
 function Home() {
   return (
     <div className=" relative h-screen w-screen overflow-hidden">
 
       {/* Navbar */}
-      <nav className=" fixed flex justify-between  z-10 sm:h-[63px] w-full bg-[#F8F8F5] ">
+      <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] ">
         <div id="logo">
-          <img src="public/logo/pilors.png" width="170px" alt="" />
+          <img src="/pilors.png" width="170px" alt="" />
         </div>
         <ul id="nav-itmes" className="flex gap-4 items-center px-4 ">
           <li>HOME</li>
@@ -48,10 +49,13 @@ function Home() {
             />
           </li>
         </ul>
-        <h1 className=" text-10xl font-nunito-sans "> PILORS </h1>
-        <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex text-[68px] leading-[1em]  z-20 ">
+        <h1 className=" px-4 text-10xl font-nunito-sans "> PILORS </h1>
+
+        <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex text-[68px] leading-[1em]  z-10 ">
       WE BLEND ART & SCIENCE <br /> TO CREATE <br /> ARCHITECTURAL MAGIC.
-      </section>
+       </section>
+       {/* <Button/> */}
+
       </section>
      
 

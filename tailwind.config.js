@@ -8,19 +8,19 @@ export default {
     extend: {
       fontFamily: {
         'nunito-sans': ['Nunito Sans', 'sans-serif'],
+        'satoshi': 'Satoshi-Variable',
+        'Manrope': 'Manrope'
       },
       fontWeight: {
-        'nunito-sans': ['200', '400', '600', '800'],
+        'nunito-sans': ['200', '400', '600', '800']
       },
       fontStyle: {
-        'nunito-sans': ['italic'],
-      },
-      fontFamily: {
-        satoshi: "Satoshi-Variable",
+        'nunito-sans': ['italic']
       },
       
       
       
+
       fontSize: {
         sm: 'clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)',
         base: 'clamp(1rem, 0.34vw + 0.91rem, 1.19rem)',

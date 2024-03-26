@@ -1,26 +1,25 @@
 import React from "react";
-import "./Button.css";
+import buttonSvg from '../../assets/icons/button.svg'
+// import "./Button.css";
 
-function Button() {
+function Button(props) {
+
   return (
-    <div class="button-container">
-      <a class="button-link" href="./gallery">
-        <p class="button-text">VIEW OUR STUNNING GALLERY</p>
-        <div class="svg-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
-            focusable="false"
-          >
-            <g>
-              <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
-            </g>
-          </svg>
-        </div>
-        <div class="design-element"></div>
-      </a>
+    <div class="transition duration-700 ease hover:bg-gradient-to-l from-black to-transparent hover:text-white cursor-pointer w-48 h-12 font-satoshi font-bold flex justify-center items-center gap-3 rounded-full border border-[#585858] p-2 hover:translate-x-0">
+      <div>
+        {props.name}
+      </div>   
+      <div className=" w-[18px] bg-[#141414] rounded-full " >
+      <img className="border rounded-full invert   " src={buttonSvg}  width={18} alt="" />
+      </div>
     </div>
   );
 }
 
 export default Button;
+
+<a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+<span class="relative">Button Text</span>
+</a>

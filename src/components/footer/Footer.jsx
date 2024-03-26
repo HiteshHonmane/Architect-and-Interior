@@ -79,7 +79,7 @@ function Footer() {
           </div>
 
         <div className="w-full justify-center  h-full flex flex-col absolute ">
-          <div className="text-white h-[50%]  w-full absolute flex flex-wrap   justify-center mt-36  text-[20px]   ">
+          <div className="text-white h-[50%]  w-full absolute flex flex-wrap   justify-center mt-36  text-[20px] overflow-hidden   ">
           FOLLOW US ON:
           </div>
 

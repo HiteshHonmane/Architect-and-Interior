@@ -1,6 +1,5 @@
-import React from 'react'
+import React from "react";
 import plusSvg from '../../assets/icons/plus.svg'
-
 function Faq() {
   return (
     <div className=' w-full  mt-12  border-b   '>

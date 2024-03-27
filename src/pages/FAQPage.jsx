@@ -2,13 +2,41 @@ import React from 'react'
 import FaqSvg from '../assets/icons/faq.svg'
 import Button from '../components/button/Button'
 import Faq from '../components/FAQ/Faq'
+import { useEffect , useRef } from 'react'
+
+import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function FAQPage() {
-  return (
-    <div className="px-12  flex overflow-clip w-screen h-screen bg-[#F8F8F5] ">
+  
+  const leftSideRef = useRef(null);
+  const container = useRef(null);
+ 
+  useEffect(() => {
 
-    <div className="flex flex-col w-[50%] h-full relative ">
-      <div className=" text-xs flex flex-row font-satoshi">
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.create({
+      trigger: container.current,
+      start: 'top top',
+      end: 'bottom +=50% ',
+      pin: leftSideRef.current,
+      markers:true,
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        trigger.kill();
+      });
+    };
+  }, []);
+
+  return (
+    <div ref={container} className="px-12  flex overflow-clip w-screen h-[200vh] bg-[#F8F8F5] pt-[10vh] ">
+
+    <div ref={leftSideRef} className="flex  flex-col w-[50%] h-[20vh] relative  ">
+      <div className=" text-xs flex flex-row font-satoshi w-full  ">
         <img width={15} src={FaqSvg} alt="" />
         FREQUENTLY ASKED QUESTIONS (FAQS)
       </div>

@@ -6,6 +6,7 @@ import Lenis from '@studio-freight/lenis'
 import Footer from './components/footer/Footer'
 import Team from './components/team/Team'
 import TestimonialsPage from './pages/TestimonialsPage'
+import ServicesPage from './pages/ServicesPage'
 
 function App() {
  
@@ -25,9 +26,11 @@ requestAnimationFrame(raf)
     <>
     <Home/>
     <TestimonialsPage/>
+    <ServicesPage/>
     <Contact/>
     <Team/>
     <Footer/>
+    
     </>
   )
 }

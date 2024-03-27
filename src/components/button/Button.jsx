@@ -5,8 +5,8 @@ import buttonSvg from '../../assets/icons/button.svg'
 function Button(props) {
 
   return (
-    <div class="transition duration-700 ease hover:bg-gradient-to-l from-black to-transparent hover:text-white cursor-pointer w-48 h-12 font-satoshi font-bold flex justify-center items-center gap-3 rounded-full border border-[#585858] p-2 hover:translate-x-0">
-      <div>
+    <div class="transition duration-700 ease hover:bg-black hover:text-white cursor-pointer w-52 h-12 font-satoshi font-bold flex justify-center items-center gap-3 rounded-full border border-[#585858] p-2 hover:translate-x-0">
+      <div className=" uppercase" >
         {props.name}
       </div>   
       <div className=" w-[18px] bg-[#141414] rounded-full " >

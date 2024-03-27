@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer'
 import Team from './components/team/Team'
 import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
+import FAQPage from './pages/FAQPage'
 
 function App() {
  
@@ -27,8 +28,9 @@ requestAnimationFrame(raf)
     <Home/>
     <TestimonialsPage/>
     <ServicesPage/>
+    <FAQPage/>
     <Contact/>
-    <Team/>
+    
     <Footer/>
     
     </>

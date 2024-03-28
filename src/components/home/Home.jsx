@@ -1,10 +1,19 @@
 import React from "react";
 import "./Home.css";
 import Button from '../button/Button'
+import Loading from './Loading'
 
 function Home() {
+
+
   return (
+    
     <div className=" relative h-screen w-screen overflow-hidden">
+      {/* //Loading animation */}
+      
+      {/* <div className=" absolute z-40 slide-out-left  ">
+        <Loading />
+      </div> */}
 
       {/* Navbar */}
       <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] ">

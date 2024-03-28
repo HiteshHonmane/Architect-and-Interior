@@ -3,7 +3,6 @@ import FaqSvg from '../assets/icons/faq.svg'
 import Button from '../components/button/Button'
 import Faq from '../components/FAQ/Faq'
 import { useEffect , useRef } from 'react'
-
 import { gsap } from "gsap";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -9,6 +9,8 @@ import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
 import FAQPage from './pages/FAQPage'
 
+import BlogPage from './pages/BlogPage'
+
 function App() {
  
  // smooth Scroll function
@@ -30,6 +32,7 @@ requestAnimationFrame(raf)
     <ServicesPage/>
     <FAQPage/>
     <Contact/>
+    <BlogPage/>
     
     <Footer/>
     

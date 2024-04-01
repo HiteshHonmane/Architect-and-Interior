@@ -10,11 +10,9 @@ function Home() {
     
     <div className=" relative h-screen w-screen overflow-hidden">
       {/* //Loading animation */}
-      
-      {/* <div className=" absolute z-40 slide-out-left  ">
-        <Loading />
-      </div> */}
-
+      <div className=" absolute z-40 slide-out-left  ">
+    <Loading />
+    </div>
       {/* Navbar */}
       <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] ">
         <div id="logo">
@@ -63,7 +61,10 @@ function Home() {
        <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex justify-between  z-10 w-full ">
         <div className="  text-[68px] leading-[1em] ">
         WE BLEND ART & SCIENCE <br /> TO CREATE <br /> ARCHITECTURAL MAGIC.
-        </div>
+        </div>\
+
+       
+        
 
       <div className=" flex flex-col gap-8 mr-16 ">
       <p className=" font-satoshi font-normal text-base">

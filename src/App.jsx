@@ -8,8 +8,8 @@ import Team from './components/team/Team'
 import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
 import FAQPage from './pages/FAQPage'
-
 import BlogPage from './pages/BlogPage'
+import Loading from './components/home/Loading'
 
 function App() {
  
@@ -27,6 +27,7 @@ requestAnimationFrame(raf)
 
   return (
     <>
+    
     <Home/>
     <TestimonialsPage/>
     <ServicesPage/>

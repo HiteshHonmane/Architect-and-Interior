@@ -21,7 +21,7 @@ function FAQPage() {
       start: 'top top',
       end: 'bottom +=50% ',
       pin: leftSideRef.current,
-      markers:true,
+      markers:false,
     });
 
     return () => {

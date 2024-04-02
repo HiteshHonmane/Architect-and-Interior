@@ -32,8 +32,10 @@ function loading() {
       delay: 0,
     })
     .to('#midlogo', {
-      display:'none'
+      position: 'fixed',
+      duration:'0.3'
     })
+ 
 
   }
 
@@ -68,7 +70,7 @@ function loading() {
     <div id='black' className=' bg-[#2b2d2f] w-[100%] h-full absolute z-10'></div>
     <div id='white' className=' bg-[#d0cfcf] h-[100%] w-full absolute  '></div>
     <div className=' absolute  top-[40%] left-[45%] transform-[translate(-50%, -50%)] z-50 w-full h-full'>
-    <img id='midlogo' className=' relative '  width={200}  src={midlogo} alt="" />
+    <img id='midlogo' className=' relative  z-50 '  width={200}  src={midlogo} alt="" />
     </div>
     </div>
   )

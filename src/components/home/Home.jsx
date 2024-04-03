@@ -61,7 +61,7 @@ function Home() {
        <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex justify-between  z-10 w-full ">
         <div className="  text-[68px] leading-[1em] ">
         WE BLEND ART & SCIENCE <br /> TO CREATE <br /> ARCHITECTURAL MAGIC.
-        </div>\
+        </div>
 
        
         

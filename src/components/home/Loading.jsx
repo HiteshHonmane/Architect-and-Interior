@@ -10,8 +10,25 @@ function loading() {
   
     reveal()
     reveal2()
+    reveal3()
 
   },[])
+  const reveal3=()=>{
+    const t3 = gsap.timeline({
+      onComplete:()=>{
+        console.log("t3 completed")
+      }
+    })
+  //   t3.to('#loading-main-container' ,{
+  //     display:'block',
+  //     duration:1
+      
+  //  })
+
+  }
+
+
+
   const reveal2 =()=>{
     const t2 = gsap.timeline({
       onComplete:()=>{
@@ -24,17 +41,28 @@ function loading() {
         duration: 1.2,
         delay: 0.7,
         stagger: 0,
+       
     })
     .to('#midlogo', {
       bottom:'40%',
       ease: Expo.easeOut,
       duration: 1.2,
       delay: 0,
+      
+      
     })
     .to('#midlogo', {
       position: 'fixed',
       duration:'0.3'
     })
+    .to('#loading-main-container' ,{
+      display:'block',
+      duration:1
+      
+   })
+   .to('#loading-main-container' ,{
+    height:0,
+ })
  
 
   }
@@ -61,16 +89,15 @@ function loading() {
       delay:0,
     })
     
-    
 
   }
 
   return (
-    <div  className=' w-[100vw] h-[100vh] absolute overflow-hidden   '> 
+    <div id='loading-main-container'  className=' w-[100vw] h-[100vh] absolute overflow-hidden   '> 
     <div id='black' className=' bg-[#2b2d2f] w-[100%] h-full absolute z-10'></div>
     <div id='white' className=' bg-[#d0cfcf] h-[100%] w-full absolute  '></div>
     <div className=' absolute  top-[40%] left-[45%] transform-[translate(-50%, -50%)] z-50 w-full h-full'>
-    <img id='midlogo' className=' relative  z-50 '  width={200}  src={midlogo} alt="" />
+    <img id='midlogo' className=' relative z-50 '  width={200}  src={midlogo} alt="" />
     </div>
     </div>
   )

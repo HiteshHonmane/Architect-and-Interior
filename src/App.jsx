@@ -9,7 +9,9 @@ import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
 import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
-import Loading from './components/home/Loading'
+import InstaPage from './pages/InstaPage'
+// import Parallax from './components/parallax/selfparallax'
+
 
 function App() {
  
@@ -28,14 +30,22 @@ requestAnimationFrame(raf)
   return (
     <>
     
-    <Home/>
-    <TestimonialsPage/>
+    <Home/> 
+
+    {/* <Parallax/> */}
     <ServicesPage/>
-    <FAQPage/>
-    <Contact/>
+    {/* <Team/> */}
+    <TestimonialsPage/>
     <BlogPage/>
-    
+    <FAQPage/>
+    {/* <InstaPage/> */}
+    <Contact/>
     <Footer/>
+    
+    
+    
+    
+    
     
     </>
   )

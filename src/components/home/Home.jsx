@@ -16,7 +16,7 @@ function Home() {
       {/* Navbar */}
       <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] ">
         <div id="logo">
-          <img src="/pilors.png" width="170px" alt="" />
+          <img src="/pilors black.png" width="200px" alt="" />
         </div>
         <ul id="nav-itmes" className="flex gap-4 items-center px-4 ">
           <li>HOME</li>

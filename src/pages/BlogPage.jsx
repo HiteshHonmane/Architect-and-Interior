@@ -1,4 +1,3 @@
-
 import React from 'react'
 import blogsvg from '../assets/icons/blog.svg'
 import Button from '../components/button/Button'
@@ -49,7 +48,7 @@ function BlogPage() {
       <div className="w-full h-[2px] bg-[#141414]"></div>
       <div className="w-full flex mt-5 justify-end  ">
         <div className="">
-          <Button name={"Explore Services"} />{" "}
+          <Button name={"Read Blogs"} />{" "}
         </div>
       </div>
     </div>

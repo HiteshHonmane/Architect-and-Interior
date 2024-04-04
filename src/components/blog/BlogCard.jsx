@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react';
 import DateSvg from '../../assets/icons/date.svg'
 import WritingSvg from '../../assets/icons/writing.svg'
+import "./BlogCard.css"
 
 function blog(props) {
+  const [isHovered, setIsHovered] = useState(false)
+
+
   return (
-    <div className=' sm:w-[594px] sm:h-[543px] '>
-      <div className=' w-full h-[435px] flex flex-col object-contain overflow-hidden '>
-        <img className='w-full h-[435px]' src={props.imglink} alt="" /> 
+    <div className={`' sm:w-[594px] sm:h-[543px]  transition duration-500 ease-in-out flex flex-col     ${isHovered ? '' : 'translate-y-5'} '`}  
+    onMouseEnter={() => setIsHovered(true)} 
+    onMouseLeave={() => setIsHovered(false)}
+    >
+
+    
+
+      <div className=' w-full h-[435px] flex flex-col object-contain overflow-hidden relative '>
+        <img 
+        // className='w-full h-[435px]  '
+        className={`w-full h-[435px] transition duration-300  ease-in-out ${isHovered? 'blur-sm' : ''} `}
+        src={props.imglink} alt="" /> 
+       <div className='w-full h-full flex  justify-center items-center absolute '>
+       <div 
+        className={`transition duration-500 ease-in-out  h-full w-[50%] overflow-x-hidden absolute  flex justify-center items-center  flex-row   ${isHovered ? 'opacity-100' : 'opacity-0'} `}
+      >
+        <span className=" relative w-full right-full whitespace-nowrap animate-marquee justify-center items-center font-satoshi text-white text-lg uppercase ">
+          Read Details &nbsp; Read Details &nbsp; Read Details &nbsp; Read Details
+        </span>
+       
+      </div>
+      
+       </div>
       </div>
       
       <div className=' flex flex-wrap w-full mt-8   '>

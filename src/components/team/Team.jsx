@@ -6,7 +6,7 @@ import ourteamsvg from "../../assets/team images/ourteam.svg";
 
 function Team() {
   return (
-    <div className=" mx-12 mt-6 w-[100vw] h-[100vh] flex flex-col relative overflow-clip ">
+    <div className=" mx-12 mt-6 w-[100vw] h-[100vh] flex flex-col relative overflow-x-hidden ">
       <div className=" overflow-hidden w-full h-[15vh] flex flex-col  ">
         <div className="  font-satoshi flex gap-2 text-[#0d0d0da0] text-xs">
           <img className="" src={ourteamsvg} width={18} alt="" />

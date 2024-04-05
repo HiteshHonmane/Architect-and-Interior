@@ -46,8 +46,8 @@ function TestimonialsPage() {
             
         </div>
         <div className=' flex gap-3'>
-              <TestimonialCard  />
-              <TestimonialCard  />
+              <TestimonialCard {...client1}  />
+              {/* <TestimonialCard  /> */}
         </div>
 
     </div>

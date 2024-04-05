@@ -10,6 +10,8 @@ import ServicesPage from './pages/ServicesPage'
 import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
 import InstaPage from './pages/InstaPage'
+import Parallax from './components/parallax/Parallax.jsx'
+
 // import Parallax from './components/parallax/selfparallax'
 
 
@@ -31,8 +33,7 @@ requestAnimationFrame(raf)
     <>
     
     <Home/> 
-
-    {/* <Parallax/> */}
+    <Parallax/>
     <ServicesPage/>
     {/* <Team/> */}
     <TestimonialsPage/>

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #main {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .img{
+    width: 100%;
+    height: auto;
+    background-image: url(/bedroom2.jpg) ;
+    background-size: cover; 
+    /* background-size: 130%; */
+    /* img zoom */
+    background-position: center;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    
+  }
+  .img2{
+    width: 100%;
+    height: auto;
+    background-image: url(/diningroom.JPG);
+    background-size: cover; 
+    /* background-size: 130%; */
+    /* img zoom */
+    background-position: center;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  }
+  .img3{
+    width: 100%;
+    height: auto;
+    background-image: url(/bedroom.jpg);
+    background-size: cover; 
+    background-position: center;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  }
+  

@@ -4,12 +4,13 @@ import sketch from "../../assets/images/sketch.svg";
 function Footer() {
   return (
     <>
-      <div className="overflow-hidden w-screen  h-screen bg-[#141414] relative ">
-        <img
-          className=" absolute  opacity-50 w-full h-[80vh] invert object-cover object-bottom scale-150 "
+      <div className="overflow-hidden w-[100vw]  h-[100vh] bg-[#141414] relative ">
+        <img id="footer-bg-img"
+          className="  h-full absolute  opacity-50 w-full invert  object-cover object-bottom scale-150  "
           src={sketch}
           alt=""
         />
+        
         <div className="flex flex-wrap relative  h-96  justify-around top-36   text-white">
           <div className=" flex flex-col gap-4 font-Manrope text-base ">
             NAVIGATE
@@ -62,7 +63,6 @@ function Footer() {
         </div>
 
         <div className="w-full h-full flex flex-wrap justify-center  absolute   ">
-
           <div className=" text-white flex flex-wrap justify-center w-[25rem] h-20 font-Manrope mt-36 ">
             SUBSCRIBE TO OUR NEWSLETTER
             <div className=" flex w-full gap-2 ">
@@ -78,26 +78,24 @@ function Footer() {
             </div>
           </div>
 
-        <div className="w-full justify-center  h-full flex flex-col absolute ">
-          <div className="text-white h-[50%]  w-full absolute flex flex-wrap   justify-center mt-36  text-[20px] overflow-hidden   ">
-          FOLLOW US ON:
+          <div className="w-full justify-center  h-full flex flex-col absolute ">
+            <div className="text-white h-[50%]  w-full absolute flex flex-wrap   justify-center mt-36  text-[20px] overflow-hidden   ">
+              FOLLOW US ON:
+            </div>
+
+            <div className="w-full justify-center text-white  h-full flex flex-col absolute">
+              <ul className=" flex  ">
+                <li>
+                  <img src="" alt="" />
+                  <span className="text-white">Facebook</span>
+                </li>
+
+                <li>
+                  <span>Facebook</span>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div className="w-full justify-center text-white  h-full flex flex-col absolute" >
-          <ul className=" flex  ">
-            <li>
-              <img src="" alt="" />
-              <span className="text-white">Facebook</span>
-            </li>
-
-            <li>
-            
-              <span>Facebook</span>
-            </li>
-          </ul>
-          </div>
-
-        </div>
         </div>
       </div>
     </>

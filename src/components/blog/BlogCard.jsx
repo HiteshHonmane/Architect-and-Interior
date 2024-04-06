@@ -18,7 +18,7 @@ function blog(props) {
       <div className=' w-full h-[435px] flex flex-col object-contain overflow-hidden relative '>
         <img 
         // className='w-full h-[435px]  '
-        className={`w-full h-[435px] transition duration-300  ease-in-out ${isHovered? 'blur-sm' : ''} `}
+        className={`w-full h-[435px] transition duration-300 ease-in-out ${isHovered? 'blur-sm , brightness-75 ' : '' }  `}
         src={props.imglink} alt="" /> 
        <div className='w-full h-full flex  justify-center items-center absolute '>
        <div 

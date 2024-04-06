@@ -8,13 +8,13 @@ function Home() {
 
   return (
     
-    <div className=" relative h-screen w-screen overflow-hidden">
+    <div className=" relative h-[100vh] w-[100vw] overflow-hidden">
       {/* //Loading animation */}
       <div className=" absolute z-40 slide-out-left  ">
-    <Loading />
+          <Loading />
     </div>
       {/* Navbar */}
-      <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] ">
+      <nav className=" fixed flex justify-between  z-30 sm:h-[63px] w-full bg-[#F8F8F5] border-b ">
         <div id="logo">
           <img src="/pilors black.png" width="200px" alt="" />
         </div>
@@ -30,42 +30,38 @@ function Home() {
 
       {/* Blend Animation section */}
       <section>
-        <ul class="image-loop absolute top-[-100px] brightness-75">
+        <ul class="image-loop  absolute top-[-100px] brightness-75">
           <li>
             <img 
-              src="https://framerusercontent.com/images/TlNK8dgFohSyX6akaMAsIrmg.jpg?scale-down-to=1024"
+              src="/moving-bg.jpg"
               alt=""
             />
           </li>
           <li>
             <img
-              src="https://framerusercontent.com/images/TlNK8dgFohSyX6akaMAsIrmg.jpg?scale-down-to=1024"
+              src="/moving-bg.jpg"
               alt=""
             />
           </li>
           <li>
             <img
-              src="https://framerusercontent.com/images/TlNK8dgFohSyX6akaMAsIrmg.jpg?scale-down-to=1024"
+              src="/moving-bg.jpg"
               alt=""
             />
           </li>
           <li>
             <img
-              src="https://framerusercontent.com/images/TlNK8dgFohSyX6akaMAsIrmg.jpg?scale-down-to=1024"
+              src="/moving-bg.jpg"
               alt=""
             />
           </li>
         </ul>
-        <h1 className=" px-4 text-10xl font-nunito-sans "> PILORS </h1>
+        <h1 className=" px-4 bg-[#F8F8F5] text-10xl font-nunito-sans "> PILORS </h1>
 
        <section id="Hero" className=" absolute bottom-[130px] px-[50px] flex justify-between  z-10 w-full ">
         <div className="  text-[68px] leading-[1em] ">
         WE BLEND ART & SCIENCE <br /> TO CREATE <br /> ARCHITECTURAL MAGIC.
         </div>
-
-       
-        
-
       <div className=" flex flex-col gap-8 mr-16 ">
       <p className=" font-satoshi font-normal text-base">
         We've built our reputation by taking even the <br /> boldest visions and making them achievable <br /> realities.
@@ -74,8 +70,6 @@ function Home() {
           {/* //passing Props */}
         <Button name={"VIEW PROJECT"}/>
         </div>
-        
-        
       </div>
       
        </section>

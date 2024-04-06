@@ -103,9 +103,9 @@ function FAQPage() {
 
 
   return (
-    <div ref={container} className="px-12  flex overflow-clip w-screen h-[135vh] bg-[#F8F8F5] pt-[10vh] ">
+    <div ref={container} className=" flex overflow-clip w-full h-[135vh] pl-12 bg-[#F8F8F5] pt-[10vh] ">
 
-    <div ref={leftSideRef} className="flex  flex-col w-[50%] h-[20vh] relative  ">
+    <div ref={leftSideRef} className="flex flex-col w-[50%] h-[20vh] relative  ">
       <div className=" text-xs flex flex-row font-satoshi w-full  ">
         <img width={15} src={FaqSvg} alt="" />
         FREQUENTLY ASKED QUESTIONS (FAQS)
@@ -125,7 +125,7 @@ function FAQPage() {
       </div>
     </div>
 
-    <div id='FAQ-Right ' className='Side h-full w-[56%] px-3  border'>
+    <div id='FAQ-Right ' className='Side h-full  border mr-12 '>
       <Faq {...faq1} />
       <Faq {...faq2} />
       <Faq {...faq3} />

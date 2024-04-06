@@ -46,7 +46,7 @@ function ServicesPage() {
 
 
   return (
-    <div className="px-12  overflow-clip w-screen h-screen bg-[#F8F8F5] ">
+    <div className="px-12 pt-12  overflow-clip w-screen h-screen bg-[#F8F8F5] ">
       <div className="flex flex-col w-full h-[40vh] ">
         <div className=" text-xs flex flex-row font-satoshi">
           <img width={15} src={ServicesSvg} alt="" />

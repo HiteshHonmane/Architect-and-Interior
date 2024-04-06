@@ -12,18 +12,18 @@ function Parallax() {
 
   useGSAP(
     () => {
-      const tl = gsap.timeline({
+      const parallaxtl = gsap.timeline({
         scrollTrigger: {
           trigger: "#main",
           start: "50% 50%",
           end: "450% 50%",
-          markers: true,
+          // markers: true,
           scrub: true,
           pin: true,
         },
       });
       // 'a ' gives taging to the animations should work simultaniously
-      tl.to(
+      parallaxtl.to(
         ".svg",
         {
           maskSize: "500%",
@@ -31,7 +31,7 @@ function Parallax() {
         "a"
       );
 
-      tl.to(
+      parallaxtl.to(
         ".img",
         {
           height: "100%",
@@ -39,21 +39,21 @@ function Parallax() {
         "a"
       );
 
-      tl.to(
+      parallaxtl.to(
         ".svg2",
         {
           maskSize: "200%",
         },
         "b"
       );
-      tl.to(
+      parallaxtl.to(
         ".img2",
         {
           height: "100%",
         },
         "b"
       );
-      tl.to(
+      parallaxtl.to(
         ".svg3",
         {
           maskSize: "200%",
@@ -61,7 +61,7 @@ function Parallax() {
         "c"
       );
 
-      tl.to(
+      parallaxtl.to(
         ".img3",
         {
           height: "100%",

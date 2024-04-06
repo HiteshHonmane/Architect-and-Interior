@@ -3,7 +3,7 @@ import Home from './components/home/Home'
 import './App.css'
 import Contact from './components/contact form/Contact'
 import Lenis from '@studio-freight/lenis'
-import Footer from './components/footer/Footer'
+import Footer from './components/footer/Footer.jsx'
 import Team from './components/team/Team'
 import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
@@ -31,11 +31,10 @@ requestAnimationFrame(raf)
 
   return (
     <>
-    
     <Home/> 
+    <Team/>
     <Parallax/>
     <ServicesPage/>
-    {/* <Team/> */}
     <TestimonialsPage/>
     <BlogPage/>
     <FAQPage/>

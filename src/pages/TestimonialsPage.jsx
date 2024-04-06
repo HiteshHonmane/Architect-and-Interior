@@ -9,13 +9,27 @@ function TestimonialsPage() {
   const client1 ={
 
     name: "- Martin Hayes, Museum Director", 
-    titel : '"Ive never worked with architects who balanced creative ingenuity with the ability to pull off ambitious designs - until now. This museum expansion is my new pride and joy."',
+    titel : 'This museum expansion is my new pride and joy....',
     clientImg: "https://framerusercontent.com/images/x33ze80qt7hAtBDu5VA1wwFw5qI.jpg?scale-down-to=512",
 
-    workImg: "https://framerusercontent.com/images/XIWzGTbchPF3j20s47w5ViA4s3A.jpg?scale-down-to=512",
+    review:'"I’ve never worked with architects who balanced creative ingenuity with the ability to pull off ambitious designs - until now. This museum expansion is my new pride and joy." ',
 
+    workImg: "https://framerusercontent.com/images/XIWzGTbchPF3j20s47w5ViA4s3A.jpg?scale-down-to=512",
+    work:'Art Museum Expansion',
     location: 'Malibu, calfornia'
 
+
+
+  }
+  const client2 ={
+
+    name: "- Kevin Wu, CEO, CloudSmart", 
+    titel : 'Our leed plantinum office building now serves as a ....',
+    clientImg: "https://framerusercontent.com/images/dd62dYQNyyynWEmy6n61i7CltYc.jpg",
+    review:'"We interviewed dozens of firms but their passion for imaginative sustainable spaces set them apart. Our LEED Platinum office building now serves as a showcase."',
+    workImg: "https://framerusercontent.com/images/iQbRfe5SBQDYjdZbJrs1uhRXYA.jpg?scale-down-to=512",
+    work:'Art Museum Expansion',
+    location: 'CloudSmart Corporate'
 
 
   }
@@ -23,9 +37,9 @@ function TestimonialsPage() {
 
 
   return (
-    <div id='main-container'  className='px-12  overflow-clip w-screen h-screen bg-[#F8F8F5] '>
+    <div id='main-container'  className='px-12  overflow-clip w-screen h-full bg-[#F8F8F5] '>
 
-        <div className='flex flex-col w-full h-[40vh] '>
+        <div className='flex flex-col w-full h-[35vh] '>
 
             <div className=' text-xs flex flex-row font-satoshi'>
                 <img width={15} src={TestmonialLogo} alt="" />
@@ -45,9 +59,9 @@ function TestimonialsPage() {
             <div className='w-full h-[2px] bg-[#141414]'></div>
             
         </div>
-        <div className=' flex gap-3'>
+        <div className=' flex gap-3 pb-12'>
               <TestimonialCard {...client1}  />
-              {/* <TestimonialCard  /> */}
+              <TestimonialCard {...client2} />
         </div>
 
     </div>

@@ -12,7 +12,7 @@ function Contact() {
 
 
   return (
-    <div id="mainContainer" className=" h-screen w-screen bg-black">
+    <div id="mainContainer" className=" h-screen w-screen bg-[#141414]">
       // Moving animation Component
       <div class="carousel-container">
         <ul class="carousel-track">
@@ -90,7 +90,7 @@ function Contact() {
           </li>
         </ul>
         //Contact Form
-        <div className=" font-satoshi  w-[88vw] flex flex-row  h-[31.857rem] bg-white relative mx-auto  mt-20">
+        <div className=" font-satoshi  w-[93vw] flex flex-row  h-[31.857rem] bg-white relative mx-auto  mt-20">
           <div
             id="left "
             className=" bg-[rgb(32,32,32)]  w-[51%] h-full flex flex-row "

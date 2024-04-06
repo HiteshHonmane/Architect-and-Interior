@@ -14,12 +14,12 @@ function TestimonialCard(props) {
           alt=""
         />
         <div className=" font-satoshi font-medium text-base uppercase">
-          The team exceeded our expectations at every turn….
+        {props.titel}
         </div>
       </div>
 
       <div className="w-full h-[50%]  flex flex-col items-end pt-32 font-satoshi ">
-        <p className="  font-normal text-base ">{props.titel}</p>
+        <p className="  font-normal text-base ">{props.review}</p>
         <div className=" text-xs uppercase py-4 text-[#BCBCBC]  ">
           {props.name}
         </div>
@@ -48,8 +48,8 @@ function TestimonialCard(props) {
         />
 
         <div className="absolute p-2 inset-0 flex flex-col  justify-center ">
-          <div className="text-white font-satoshi font-medium text-base">
-            HILLSIDE OASIS RESIDENCE
+          <div className="text-white font-satoshi font-medium text-base uppercase">
+           {props.work}
           </div>
           <div className="flex items-center text-white">
             <img width={14} className="invert " src={locationsvg2} alt="" />

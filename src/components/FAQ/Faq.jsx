@@ -9,17 +9,16 @@ function Faq(props) {
     };
 
     return (
-        <div className="w-full mt-6 border-b flex flex-col cursor-pointer  ">
+        <div className="w-full pt-6 border-b flex flex-col cursor-pointer  ">
             <div className="flex px-11 h-16 gap-20 items-center align-middle hover:bg-[#EDEDEA] hover:transition-all duration-500 ease-out  " onClick={toggleExpand}>
                 <img src={plusSvg} width={14} alt="" />
-                <div className="flex font-satoshi font-medium text-base text-[#20201F] w-[100%] ">
+                <div className="flex font-satoshi font-medium text-base text-[#20201F] ">
                   {props.question}
                 </div>
             </div>
             <div className={`faq-answer p-2 font-satoshi text-base font-normal transition-all duration-500 ease-in-out ml-10 ${isExpanded ? 'block' : 'hidden'}`}>
                 {props.answer}
             </div>
-            
         </div>
     );
 }

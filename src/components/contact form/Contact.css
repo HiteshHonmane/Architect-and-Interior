@@ -1,11 +1,15 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
-*{
-  margin: 0;
-  padding: 0;
-}
+
 body{
     overflow-x: hidden;
 }
+
+
+
+
+
+
+
 
 .carousel-container {
   position: relative;

@@ -32,13 +32,14 @@ requestAnimationFrame(raf)
   return (
     <>
     <Home/> 
-    <Team/>
+    
     <Parallax/>
     <ServicesPage/>
+    <Team/>
     <TestimonialsPage/>
     <BlogPage/>
     <FAQPage/>
-    {/* <InstaPage/> */}
+    <InstaPage/>
     <Contact/>
     <Footer/>
     

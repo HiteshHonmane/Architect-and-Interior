@@ -3,9 +3,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
-import './Parallax.css'
-
-
+import "./Parallax.css";
 
 function Parallax() {
   const ref = useRef();
@@ -78,9 +76,15 @@ function Parallax() {
       <div ref={ref} className=" overflow-y-hidden">
         <div
           id="main"
-          className=" relative text-white flex items-end justify-center  "
+          className="  relative text-black flex items-center justify-center object-cover  "
         >
-          <div className="img flex items-end  ">
+          {/* change 1 start   */}
+          <span className="  absolute flex items-center justify-center text-5xl font-Manrope">
+            <div>EXPERIENCE THE INTERIOR</div>
+          </span>
+         {/* change 1 start end  */}
+
+          <div className="img flex items-end z-10  ">
             <div className="img2 flex items-end">
               <div className="img3 flex  items-end"></div>
             </div>

@@ -39,14 +39,9 @@ requestAnimationFrame(raf)
     <TestimonialsPage/>
     <BlogPage/>
     <FAQPage/>
-    <InstaPage/>
     <Contact/>
     <Footer/>
-    
-    
-    
-    
-    
+
     
     </>
   )

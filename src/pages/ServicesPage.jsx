@@ -25,26 +25,33 @@ function ServicesPage() {
   const service3 = {
     serviceTitle: " Landscaping Design",
     ServiceLogo: "src/assets/icons/services Icon/landscaping.svg",
+    bgImg:'https://www.home-designing.com/wp-content/uploads/2022/07/garden-waterfall.jpg',
   };
   const service4 = {
     serviceTitle: "Building Renovation",
     ServiceLogo: "src/assets/icons/services Icon/building Renovation.svg",
+    bgImg:'https://www.dbsg.com/wp-content/uploads/2020/05/Renovate-or-build.jpg',
+
   };
   const service5 = {
     serviceTitle: "3d Visualization",
     ServiceLogo: "src/assets/icons/services Icon/3D.svg",
+    bgImg:'https://www.ronenbekerman.com/wp-content/uploads/2018/11/commercial-interior-3d-visualization-breathtaking-lobby-presentation.jpg',
   };
   const service6 = {
     serviceTitle: "Planning & Strategies",
     ServiceLogo: "src/assets/icons/services Icon/architect.svg",
+    bgImg:'https://5.imimg.com/data5/SELLER/Default/2023/1/LP/AB/VB/41936213/architectural-services-500x500.jpg'
   };
   const service7 = {
     serviceTitle: "commercial spaces",
     ServiceLogo: "src/assets/icons/services Icon/architect.svg",
+    bgImg:'https://foyr.com/learn/wp-content/uploads/2019/03/wunderman-fitout-slider8.jpg'
   };
   const service8 = {
     serviceTitle: "Functional Spaces",
     ServiceLogo: "src/assets/icons/services Icon/architect.svg",
+    bgImg:'https://www.arch2o.com/wp-content/uploads/2022/11/Arch2O-multifunctional-spaces.jpg'
   };
   const service9 = {
     serviceTitle: "Architectural Design",

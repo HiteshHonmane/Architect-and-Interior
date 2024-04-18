@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Hamburger.css";
+import Navbar from "./Navbar";
 
 function Hamburger() {
   const [isActive, setIsActive] = useState(false);
@@ -9,7 +10,7 @@ function Hamburger() {
   };
 
   return (
-    <div className={`hamburger ${isActive ? 'is-active' : ''} z-40`} onClick={handleClick}>
+    <div className={`hamburger ${isActive ? 'is-active' : ''} z-50`} onClick={handleClick}>
       <div className="hamburger__container">
         <div className="hamburger__inner"></div>
         <div className="hamburger__hidden"></div>

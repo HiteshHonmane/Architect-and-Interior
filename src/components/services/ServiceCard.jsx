@@ -14,7 +14,7 @@ function ServiceCard(props) {
      <div className={`" ${isHovered? 'opacity-1' : 'opacity-0'} transition-all duration-700  ease-in-out  "`}>
      <img
         src={props.bgImg}
-        className="w-[37.5rem] h-28 object-cover object-center absolute clip-polygon brightness-90  "
+        className="w-[37.5rem] h-28 object-center  object-cover absolute clip-polygon brightness-90  "
         alt=""
       />
      </div>

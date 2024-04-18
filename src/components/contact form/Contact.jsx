@@ -106,7 +106,7 @@ function Contact() {
                 </div>
 
                 <div>
-                  <div>+91 74474 42448</div>
+                  <div>+91 74474 XXXX</div>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@ function Contact() {
 
                 <div>
                   <div className="flex flex-col items-start">
-                    Pilors Architecture Nagpur Maharashatra
+                    Pilors Architecture India
                     <button className=" text-[12px] ">SEE ON MAP</button>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ function Contact() {
                 </div>
 
                 <div>
-                  <div className=" " >pilorsarchitect@gmail.com</div>
+                  <div className=" " >pilxxxxxhitect@gmail.com</div>
                 </div>
               </div>
             </div>

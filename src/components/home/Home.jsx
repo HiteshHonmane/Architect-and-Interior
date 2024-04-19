@@ -6,10 +6,10 @@ import Loading from "./Loading";
 import Hamburger from "./Hamburger";
 import Navbar from "./Navbar";
 function Home() {
-  const [navWidth, setNavwidth] = useState("100%");
+  const [navWidth, setNavWidth] = useState("100%");
 
   const hamburgerClick = () => {
-    setNavwidth(navWidth === "100%" ? "0" : "100%");
+    setNavWidth(navWidth === "100%" ? "0" : "100%");
   };
 
   return (

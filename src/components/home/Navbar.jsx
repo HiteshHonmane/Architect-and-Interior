@@ -3,7 +3,7 @@ import React from "react";
 const NAV_LINK_CLASSES = "py-2 text-sm text-zinc-900 font-semibold";
 const SUB_NAV_LINK_CLASSES = "block py-1 text-sm text-zinc-700";
 
-const Navbar = () => {
+const Navbar = ({navWidth}) => {
   return (
     <nav className="bg-white shadow-lg  h-full flex justify-center items-center  absolute z-40 ">
       <div className="container mx-auto px-6 py-3 flex justify-center">

@@ -11,7 +11,8 @@ import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
 import InstaPage from './pages/InstaPage'
 import Parallax from './components/parallax/Parallax.jsx'
-import Navbar from './components/home/Navbar.jsx'
+import Special from './components/Special/Special.jsx'
+
 
 // import Parallax from './components/parallax/selfparallax'
 
@@ -32,7 +33,8 @@ requestAnimationFrame(raf)
 
   return (
     <>
-    <Home/>     
+    <Home/>   
+    <Special/>  
     <Parallax/>
     <ServicesPage/>
     <Team/>

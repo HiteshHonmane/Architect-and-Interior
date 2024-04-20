@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Hamburger.css";
-import Navbar from "./Navbar";
+
 
 function Hamburger() {
   const [isActive, setIsActive] = useState(false);

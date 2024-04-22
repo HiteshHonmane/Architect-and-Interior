@@ -14,7 +14,7 @@ function TestimonialCard(props) {
           alt=""
         />
         <div className=" font-satoshi font-medium text-base uppercase">
-        {props.titel}
+          {props.titel}
         </div>
       </div>
 
@@ -29,7 +29,7 @@ function TestimonialCard(props) {
       <div className="w-full mt-28 h-[1px] bg-[#E7E7E7]"></div>
 
       <div
-        className="absolute mt-2 
+        className="absolute mt-2  
       "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -40,7 +40,7 @@ function TestimonialCard(props) {
           alt=""
         />
         <img
-          className={` w-full   absolute bottom-0 object-cover transition duration-500 ease-in-out  ${
+          className={` w-full   absolute bottom-0 object-cover transition duration-500 ease-in-out brightness-75  ${
             isHovered ? "opacity-1  " : " opacity-0"
           }`}
           src={props.workImg}
@@ -48,9 +48,14 @@ function TestimonialCard(props) {
         />
 
         <div className="absolute p-2 inset-0 flex flex-col  justify-center ">
-          <div className="text-white font-satoshi font-medium text-base uppercase">
-           {props.work}
+          <div
+            className={` text-white font-satoshi font-medium text-base uppercase   ${
+              isHovered ? "text-black  " : " text-white"
+            }`}
+          >
+            {props.work}
           </div>
+
           <div className="flex items-center text-white">
             <img width={14} className="invert " src={locationsvg2} alt="" />
             <span className="uppercase font-satoshi  ml-2">

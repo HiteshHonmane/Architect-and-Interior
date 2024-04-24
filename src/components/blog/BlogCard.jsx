@@ -6,6 +6,10 @@ import "./BlogCard.css"
 function blog(props) {
   const [isHovered, setIsHovered] = useState(false)
 
+  const font = {
+    font: " font-satoshi ",
+  };
+
 
   return (
     <div className={`' sm:w-[594px] sm:h-[543px]  transition duration-500 ease-in-out flex flex-col     ${isHovered ? '' : 'translate-y-5'} '`}  
@@ -24,7 +28,7 @@ function blog(props) {
        <div 
         className={`transition duration-500 ease-in-out  h-full w-[50%] overflow-x-hidden absolute  flex justify-center items-center  flex-row   ${isHovered ? 'opacity-100' : 'opacity-0'} `}
       >
-        <span className=" relative w-full right-full whitespace-nowrap animate-marquee justify-center items-center font-satoshi text-white text-lg uppercase ">
+        <span className={`" relative w-full right-full whitespace-nowrap animate-marquee justify-center items-center ${font.font} text-white text-lg uppercase "`}>
           Read Details &nbsp; Read Details &nbsp; Read Details &nbsp; Read Details
         </span>
        
@@ -34,11 +38,11 @@ function blog(props) {
       </div>
       
       <div className=' flex flex-wrap w-full mt-8   '>
-      <div className=' font-satoshi mx-3  py-1 px-2 border rounded-lg font-medium text-xs  uppercase  '>
+      <div className={`' ${font.font} mx-3  py-1 px-2 border rounded-lg font-medium text-xs  uppercase  '`}>
         {props.tag}
       </div>
 
-      <div className=' font-satoshi font-medium text-  w-full text-[20px] px-3 uppercase '>
+      <div className={`' f${font.font} font-medium text-  w-full text-[20px] px-3 uppercase '`}>
         {props.title}
       </div>
 
@@ -53,7 +57,7 @@ function blog(props) {
 
         <div className='w-[48%] flex justify-center gap-1 '>
           <img width={18} src={DateSvg} alt="" />
-          <span className=' font-satoshi text-xs uppercase   text-[#A6A6A4]'>
+        <span className={`' ${font.font}text-xs uppercase   text-[#A6A6A4]'`}>
             {props.date}
           </span>
         </div>

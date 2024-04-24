@@ -28,20 +28,24 @@ function BlogPage() {
     imglink:'https://framerusercontent.com/images/v1ltoVHr1qjuj63noI3YsrEqSNg.jpg?scale-down-to=1024',
   }
 
+  const font = {
+    font: " font-satoshi ",
+  };
+
 
 
   return (
     <div className="px-12  overflow-clip w-screen h-screen bg-[#F8F8F5] ">
     <div className="flex flex-col w-full h-[30vh] ">
-      <div className=" text-xs flex flex-row font-satoshi">
+      <div className={`" text-xs flex flex-row  ${font.font} "`}>
         <img width={15} src={blogsvg} alt="" />
         BLOGS & INSIGHTS
       </div>
-      <div className=" font-satoshi font-medium text-xl ">
+      <div className={`" font-satoshi font-medium text-xl ${font.font} "`}>
       INSIGHTS, THOUGHTS, TRENDS & TIPS
       </div>
       <div className="flex relative px-12 py-6 justify-end">
-        <p className=" font-satoshi text-[18px]  ">
+        <p className={`" ${font.font} text-[18px]  "`}>
         Stay on the pulse of the latest architecture trends <br /> and thinking via our collection of insights.
         </p>
       </div>

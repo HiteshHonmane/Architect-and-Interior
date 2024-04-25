@@ -42,7 +42,7 @@ function blog(props) {
         {props.tag}
       </div>
 
-      <div className={`' f${font.font} font-medium text-  w-full text-[20px] px-3 uppercase '`}>
+      <div className={`' ${font.font} font-medium text-  w-full text-[20px] px-3 uppercase '`}>
         {props.title}
       </div>
 

@@ -12,7 +12,14 @@ function Home() {
 
   const hamburgerClick = () => {
     setNavVisible(!navVisible); // Toggle the navVisible state
+
   };
+  
+  const font = {
+    fontS: " font-satoshi ",
+    fontnunito:' font-nunito-sans'
+  };
+
 
   return (
     <div className=" relative h-[100vh] w-[100vw] overflow-hidden">
@@ -124,7 +131,7 @@ function Home() {
             <img className=" w-full " src="/moving-bg.jpg" alt="" />
           </li>
         </ul>
-        <h1 className=" sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl font-nunito-sans  ">
+        <h1 className={`" sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  "`}>
           {" "}
           PILORS{" "}
         </h1>
@@ -133,14 +140,14 @@ function Home() {
           id="Hero"
           className=" absolute sm:bottom-[130px] sm:px-[50px]  flex sm:justify-between  flex-col sm:flex-row z-10 w-full bg-[#F8F8F5] "
         >
-          <div className=" font-satoshi  sm:text-3xl text-3xl leading-[1em] font-medium text-center sm:text-start sm:flex-col px-1  ">
+          <div className={`" ${font.fontS} sm:text-3xl text-3xl leading-[1em] font-medium text-center sm:text-start sm:flex-col px-1  "`}>
             <span className=" sm:flex flex">
               WE BLEND ART & SCIENCE TO CREATE
             </span>
             <span className=" sm:w-full ">ARCHITECTURAL MAGIC.</span>
           </div>
           <div className=" flex flex-col gap-8 sm:mr-16 mt-4 sm:mt-0 ">
-            <p className=" font-satoshi sm:font-normal sm:text-base text-center px-8 ">
+            <p className={`" ${font.fontS} sm:font-normal sm:text-base text-center px-8 "`}>
               We've built our reputation by taking even the boldest visions and
               making them achievable realities.
             </p>

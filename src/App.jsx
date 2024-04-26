@@ -45,8 +45,6 @@ requestAnimationFrame(raf)
     <FAQPage/>
     <Contact/>
     <Footer/>
-
-    
     </>
   )
 }

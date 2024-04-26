@@ -2,6 +2,7 @@ import React from 'react'
 import blogsvg from '../assets/icons/blog.svg'
 import Button from '../components/button/Button'
 import BlogCard from '../components/blog/BlogCard'
+import { Link } from 'react-router-dom'
 
 function BlogPage() {
 
@@ -56,8 +57,8 @@ function BlogPage() {
         </div>
       </div>
     </div>
-    <div className=' flex flex-row gap-3'>
-          <BlogCard {...blog1}/>
+    <div className=' flex flex-row gap-3 cursor-pointer'>
+         <Link>  <BlogCard {...blog1}/> </Link> 
           <BlogCard {...blog2}/>
           <BlogCard {...blog3}/>
     </div>

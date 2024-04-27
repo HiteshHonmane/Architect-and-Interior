@@ -35,9 +35,8 @@ requestAnimationFrame(raf)
   return (
     <>
     <Home/>
-    <BlogSecondPage/>   
-    <Special/>  
     <Parallax/>
+    <Special/> 
     <ServicesPage/>
     <Team/>
     <TestimonialsPage/>
@@ -45,6 +44,8 @@ requestAnimationFrame(raf)
     <FAQPage/>
     <Contact/>
     <Footer/>
+    <BlogSecondPage/>
+   
     </>
   )
 }

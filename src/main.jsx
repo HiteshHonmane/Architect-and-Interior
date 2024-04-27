@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route } from 'react-router-dom';
-import { RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import App from './App.jsx';
 import './App.css';
 import './index.css';
@@ -19,21 +17,21 @@ import Parallax from './components/parallax/Parallax.jsx';
 import Special from './components/Special/Special.jsx';
 import BlogSecondPage from './components/blog/BlogSecondPage.jsx';
 
-const router = createBrowserRouter(
-    createRoutesFromElements(
-        <>
-            <Route path='' element={<Home/>}/>
-            <Route path='Parallex' element={<Parallax />} />
-            <Route path='ServicesPage' element={<ServicesPage />} />
-            <Route path='Team' element={<Team />} />
-            <Route path='TestimonialsPage' element={<TestimonialsPage/>} />
-            <Route path='BlogPage' element={<BlogPage />} />
-            <Route path='FAQPage' element={<FAQPage/>} />
-            <Route path='FAQPage' element={<Contact/>} />
-            <Route path='FAQPage' element={<Footer/>} />
-     </>
-    )
-);
+// const router = createBrowserRouter(
+//     createRoutesFromElements(
+//         <>
+//             <Route path='' element={<Home/>}/>
+//             <Route path='Parallex' element={<Parallax />} />
+//             <Route path='ServicesPage' element={<ServicesPage />} />
+//             <Route path='Team' element={<Team />} />
+//             <Route path='TestimonialsPage' element={<TestimonialsPage/>} />
+//             <Route path='BlogPage' element={<BlogPage />} />
+//             <Route path='FAQPage' element={<FAQPage/>} />
+//             <Route path='FAQPage' element={<Contact/>} />
+//             <Route path='FAQPage' element={<Footer/>} />
+//      </>
+//     )
+// );
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     

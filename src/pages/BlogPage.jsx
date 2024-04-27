@@ -58,7 +58,7 @@ function BlogPage() {
       </div>
     </div>
     <div className=' flex flex-row gap-3 cursor-pointer'>
-         <Link>  <BlogCard {...blog1}/> </Link> 
+          <BlogCard {...blog1}/> 
           <BlogCard {...blog2}/>
           <BlogCard {...blog3}/>
     </div>

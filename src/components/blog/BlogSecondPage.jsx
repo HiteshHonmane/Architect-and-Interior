@@ -1,5 +1,5 @@
 import React from "react";
-
+import './BlogCard.css'
 function BlogSecondPage() {
   const font = {
     font: " font-satoshi ",
@@ -13,7 +13,7 @@ function BlogSecondPage() {
           src="https://framerusercontent.com/images/Jm14NVS1DWCTSNRjQLkBTLtEKok.jpg?scale-down-to=1024"
           alt=""
         />
-        <div className=" absolute h-[50%] bg-gradient-to-b from-[#000] to-[#0000007c]  w-[100vw]bg-gradient-to-b  flex flex-col  justify-center  items-center ">
+        <div className=" bg-gradient absolute h-[50%]  w-[100vw]  flex flex-col  justify-center  items-center ">
           <h1
             className={`" relative bg-black text-white text-[68px] h-[30%] w-[40%] text-center flex items-start font-medium  ${font.font} "`}
           >

@@ -12,14 +12,12 @@ function Home() {
 
   const hamburgerClick = () => {
     setNavVisible(!navVisible); // Toggle the navVisible state
-
   };
-  
+
   const font = {
     fontS: " font-satoshi ",
-    fontnunito:' font-nunito-sans'
+    fontnunito: " font-nunito-sans",
   };
-
 
   return (
     <div className=" relative h-[100vh] w-[100vw] overflow-hidden">
@@ -117,7 +115,7 @@ function Home() {
 
       {/* Blend Animation section */}
       <section className=" ">
-        <ul class="image-loop object-cover h-[30vh] sm:h-[80vh]  absolute  sm:top-[-100px] brightness-75">
+        <ul class="image-loop object-cover h-[30vh] xl:h-[80vh] 2xl:h-[80vh] sm:h-[80vh] lg:h-[30vh]   absolute  sm:top-[-100px] brightness-75">
           <li>
             <img className=" sm:w-full   " src="/moving-bg.jpg" alt="" />
           </li>
@@ -131,23 +129,28 @@ function Home() {
             <img className=" w-full " src="/moving-bg.jpg" alt="" />
           </li>
         </ul>
-        <h1 className={`" sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  "`}>
-          {" "}
-          PILORS{" "}
+        <h1
+          className={`" lg:text-9xl xl:mt-0  2xl:mt-0 xl:pl-8 2xl:pl-0  xl:text-[22rem] 2xl:text-10xl sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  "`}
+        >
+          PILORS
         </h1>
 
         <section
           id="Hero"
           className=" absolute sm:bottom-[130px] sm:px-[50px]  flex sm:justify-between  flex-col sm:flex-row z-10 w-full bg-[#F8F8F5] "
         >
-          <div className={`" ${font.fontS} sm:text-3xl text-3xl leading-[1em] font-medium text-center sm:text-start sm:flex-col px-1  "`}>
+          <div
+            className={`" ${font.fontS} sm:text-3xl text-3xl leading-[1em] font-medium text-center sm:text-start sm:flex-col px-1  "`}
+          >
             <span className=" sm:flex flex">
               WE BLEND ART & SCIENCE TO CREATE
             </span>
             <span className=" sm:w-full ">ARCHITECTURAL MAGIC.</span>
           </div>
           <div className=" flex flex-col gap-8 sm:mr-16 mt-4 sm:mt-0 ">
-            <p className={`" ${font.fontS} sm:font-normal sm:text-base text-center px-8 "`}>
+            <p
+              className={`" ${font.fontS} sm:font-normal sm:text-base text-center px-8 "`}
+            >
               We've built our reputation by taking even the boldest visions and
               making them achievable realities.
             </p>

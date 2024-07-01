@@ -99,7 +99,7 @@ function Home() {
       </div>
 
       {/* Hamburger icon */}
-      <nav className=" fixed flex justify-between flex-row   z-50 sm:h-[63px] w-full bg-[#F8F8F5] border-b ">
+      <nav className=" fixed flex justify-between flex-row z-50 sm:h-[63px] w-full bg-[#F8F8F5] border-b ">
         <div id="logo">
           <img
             className=" sm:w-[200px] w-44 "
@@ -108,7 +108,7 @@ function Home() {
             alt=""
           />
         </div>
-        <div onClick={hamburgerClick} className="invert sm:pr-5 flex">
+        <div onClick={hamburgerClick} className="invert  flex">
           <Hamburger />
         </div>
       </nav>
@@ -131,7 +131,8 @@ function Home() {
         </ul>
         {/* Hero Section */}
         <h1
-          className={`" lg:text-9xl xl:mt-0  2xl:mt-0 xl:pl-8 2xl:pl-0  xl:text-[22rem] 2xl:text-10xl sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  "`}
+          className={`" lg:text-9xl xl:mt-0  2xl:mt-0 xl:pl-8 2xl:pl-0  xl:text-[22rem] 2xl:text-10xl sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  
+            "`}
         >
           PILORS
         </h1>

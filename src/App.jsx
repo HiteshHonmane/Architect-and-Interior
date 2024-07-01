@@ -9,7 +9,6 @@ import TestimonialsPage from './pages/TestimonialsPage'
 import ServicesPage from './pages/ServicesPage'
 import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
-import InstaPage from './pages/InstaPage'
 import Parallax from './components/parallax/Parallax.jsx'
 import Special from './components/Special/Special.jsx'
 import BlogSecondPage from './components/blog/BlogSecondPage.jsx'
@@ -44,7 +43,7 @@ requestAnimationFrame(raf)
     <FAQPage/>
     <Contact/>
     <Footer/>
-    <BlogSecondPage/>
+   
    
     </>
   )

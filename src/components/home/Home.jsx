@@ -129,12 +129,13 @@ function Home() {
             <img className=" w-full " src="/moving-bg.jpg" alt="" />
           </li>
         </ul>
+        {/* Hero Section */}
         <h1
           className={`" lg:text-9xl xl:mt-0  2xl:mt-0 xl:pl-8 2xl:pl-0  xl:text-[22rem] 2xl:text-10xl sm:relative relative pb-[12vh] sm:mb-96 px-auto sm:px-4 pt-4 bg-[#F8F8F5] top-12 sm:text-10xl text-8xl ${font.fontnunito}  "`}
         >
           PILORS
         </h1>
-
+       
         <section
           id="Hero"
           className=" absolute sm:bottom-[130px] sm:px-[50px]  flex sm:justify-between  flex-col sm:flex-row z-10 w-full bg-[#F8F8F5] "

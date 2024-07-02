@@ -4,9 +4,18 @@ import Button from "../components/button/Button";
 import ServiceCard from "../components/services/ServiceCard";
 import architectSvg from "../assets/icons/services Icon/architect.svg";
 import $ from "jquery";
-
 import "./ServicePage.css";
+import PageHeader from "../components/pageHeader/PageHeader";
 
+
+const serviceProps = {
+  title:'SERVICES',
+    logo:'assets/icons/services.svg',
+    Headline:<> <p> DREAM. DESIGN. DEVELOP. <br />WE MAKE EVEN BOLD DREAMS INTO FINISHED PRODUCTS.</p></>,
+    Description:<React.Fragment><p>We make even the wildest architectural dreams into<br/>dramatic yet feasible finished products anyone<br/>would be proud of.</p></React.Fragment>,
+    ServicesSvg:'/public/assets/icons/services.svg',
+    buttonName:'Explore Services',
+};
 function ServicesPage() {
   const services = [
     {
@@ -64,31 +73,11 @@ function ServicesPage() {
   ];
 
   return (
-    <div className="px-12 pt-12 relative overflow-clip w-screen h-screen bg-[#F8F8F5]">
-      <div className="flex flex-col w-full h-[40vh]">
-        <div className="text-xs flex flex-row font-satoshi">
-          <img width={15} src={ServicesSvg} alt="" />
-          SERVICES
-        </div>
-        <div className="font-satoshi font-medium text-xl">
-          DREAM. DESIGN. DEVELOP. <br />
-          WE MAKE EVEN BOLD DREAMS INTO FINISHED PRODUCTS.
-        </div>
-        <div className="flex relative px-12 py-6 justify-end">
-          <p className="font-satoshi text-[18px]">
-            We make even the wildest architectural dreams into <br /> dramatic
-            yet feasible finished products anyone <br />
-            would be proud of.
-          </p>
-        </div>
-        <div className="w-full h-[2px] bg-[#141414]"></div>
-        <div className="w-full flex mt-5 justify-end">
-          <div>
-            <Button name={"Explore Services"} />{" "}
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap gap-1">
+
+    <div className=" pt-12 h-[165vh]  sm:px-12 sm:pt-12 relative overflow-clip sm:w-screen sm:h-screen bg-[#F8F8F5]">
+   <PageHeader {...serviceProps}/>
+
+      <div className="flex flex-wrap px-6 sm:px-0 gap-1">
         {services.map((service) => (
           <ServiceCard key={service.serviceTitle} {...service} />
         ))}

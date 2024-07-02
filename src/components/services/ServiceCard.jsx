@@ -7,7 +7,7 @@ function ServiceCard(props) {
   return (
     <div
       id="service-card"
-      className="w-[37.5rem] bg-white h-28 bg- transition-all duration-700  ease-in-out bg-center  transform hover:scale-95 service-card relative hover:bg-black hover:text-white "
+      className=" w-[400px] sm:w-[460px]  xl:w-[400px] 2xl:w-[470px] 3xl:w-[37.5rem] bg-white h-28 bg- transition-all duration-700  ease-in-out bg-center  transform hover:scale-95 service-card relative hover:bg-black hover:text-white "
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -18,7 +18,6 @@ function ServiceCard(props) {
         alt=""
       />
      </div>
-
       <div className="p-5 absolute  ">
         <img
           className={`" ${isHovered ? 'invert' : ""} transition-all duration-700 ease-in-out transform hover:scale-110" `}

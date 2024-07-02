@@ -2,7 +2,8 @@ import React from 'react'
 import blogsvg from '../assets/icons/blog.svg'
 import Button from '../components/button/Button'
 import BlogCard from '../components/blog/BlogCard'
-import { Link } from 'react-router-dom'
+import PageHeader from '../components/pageHeader/PageHeader';
+
 
 function BlogPage() {
   const blogs = [
@@ -29,30 +30,20 @@ function BlogPage() {
     },
   ];
 
+  const blogProps = {
+    title: 'BLOGS & INSIGHTS',
+    logo: blogsvg,
+    Headline: 'INSIGHTS, THOUGHTS, TRENDS & TIPS',
+    Description: <> <p> Stay on the pulse of the latest architecture trends <br /> and thinking via our collection of insights.</p></>,
+    buttonName: 'Read Blogs',
+  };
+
   return (
-    <div className="px-12 overflow-clip w-screen h-screen bg-[#F8F8F5]">
-      <div className="flex flex-col w-full h-[30vh]">
-        <div className={`text-xs flex flex-row font-satoshi gap-1`}>
-          <img width={15} src={blogsvg} alt="" />
-          BLOGS & INSIGHTS
-        </div>
-        <div className={`font-satoshi font-medium text-xl uppercase`}>
-          INSIGHTS, THOUGHTS, TRENDS & TIPS
-        </div>
-        <div className="flex relative px-12 py-6 justify-end">
-          <p className={`font-satoshi text-[18px]`}>
-            Stay on the pulse of the latest architecture trends <br />
-            and thinking via our collection of insights.
-          </p>
-        </div>
-        <div className="w-full h-[2px] bg-[#141414]" />
-        <div className="w-full flex mt-5 justify-end">
-          <div>
-            <Button name="Read Blogs" />{' '}
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row gap-3 cursor-pointer">
+    <div className="pt-12 h-[280vh]  sm:px-12 sm:pt-12 relative overflow-clip sm:w-screen sm:h-screen bg-[#F8F8F5]">
+
+      <PageHeader {...blogProps} />
+
+      <div className=" px-5 sm:px-0 flex  flex-col sm:flex-row gap-3 cursor-pointer">
         {blogs.map((blog) => (
           <BlogCard key={blog.title} {...blog} />
         ))}

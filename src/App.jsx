@@ -35,10 +35,10 @@ requestAnimationFrame(raf)
     <>
     <Home/>
     <Parallax/>
-    <Special/> 
+    {/* <Special/>  */}
     <ServicesPage/>
-    <Team/>
-    <TestimonialsPage/>
+    {/* <Team/> */}
+    {/* <TestimonialsPage/> */}
     <BlogPage/>
     <FAQPage/>
     <Contact/>

@@ -40,6 +40,30 @@ export default {
         '15xl': 'clamp(35.53rem, 149.97vw + -1.96rem, 118.01rem)',
         '18xl': 'clamp(44.41rem, 205.27vw + -6.91rem, 157.31rem)',
       },
+      screens: {
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        '3xl': '1920px',
+      },
+      keyframes: {
+        'mouse-wheel': {
+          '0%': { opacity: 1, transform: 'translateY(0)' },
+          '100%': { opacity: 0, transform: 'translateY(6px)' },
+        },
+        'mouse-scroll': {
+          '0%': { opacity: 0 },
+          '50%': { opacity: 0.5 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        'mouse-wheel': 'mouse-wheel 0.6s linear infinite',
+        'mouse-scroll': 'mouse-scroll 1s infinite',
+      },
     },
   },
   plugins: [

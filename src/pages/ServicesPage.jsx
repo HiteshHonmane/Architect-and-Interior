@@ -28,7 +28,7 @@ function ServicesPage() {
       serviceTitle: "Interior Design",
       ServiceLogo: "../assets/icons/services Icon/interior.svg",
       bgImg:
-        "https://flyingcdn-98ab332c.b-cdn.net/wp-content/uploads/2021/10/luxury-interior-designers-in-Delhi-1.jpg",
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/329145984/original/0b952be215c6d391081dca58e3960c0b47f5bfbb/make-interior-design-for-livingroom-kitchen-office-and-bedroom.jpg",
     },
     {
       serviceTitle: "Landscaping Design",
@@ -69,6 +69,8 @@ function ServicesPage() {
     {
       serviceTitle: "Architectural Design",
       ServiceLogo: architectSvg,
+      bgImg:
+        "https://www.theinteria.com/BackendImages/BlogImages/the-importance-of-architectural-design-for-houses.jpg",
     },
   ];
 

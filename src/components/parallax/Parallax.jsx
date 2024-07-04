@@ -79,7 +79,7 @@ function Parallax() {
           className="  relative text-black flex items-center justify-center object-cover  "
         >
           {/* change 1 start   */}
-          <span className="  absolute flex items-center justify-center text-5xl font-Manrope">
+          <span className="  absolute flex sm:items-center sm:justify-center text-4xl sm:text-5xl font-Manrope text-center">
             <div>EXPERIENCE THE INTERIOR</div>
           </span>
          {/* change 1 start end  */}

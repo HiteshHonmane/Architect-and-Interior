@@ -12,10 +12,12 @@ Searvices Page  size issue & options gets cut off.
 aline mouseScroll animation issue.
 Reload shift page to left issue.
 Footer Socials alignment issue.
- 
+Navbar Size Down issue.
+
 
 Contact Page animations in small devices issues.
 Service screen for Mobile and laptos
+
 ### Remove Unwanted Pages Focuse on unique design pages.
 
 Our Team. 

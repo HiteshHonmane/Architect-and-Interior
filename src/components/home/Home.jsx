@@ -24,9 +24,8 @@ function Home() {
     <div className=" relative h-[100vh] w-[100vw] overflow-hidden">
       {/* Navbar */}
       <nav
-        className={`bg-white shadow-lg flex justify-center items-center w-full h-[100vh] fixed z-40 transition-all duration-1000 ease-in-out   ${
-          navVisible ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`bg-white shadow-lg flex justify-center items-center w-full h-[100vh] fixed z-40 transition-all duration-1000 ease-in-out   ${navVisible ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <div className="container mx-auto px-6 py-3 flex justify-center">
           <div className="text-zinc-700">
@@ -173,8 +172,8 @@ function Home() {
             </div>
           </div>
           <div className=" flex justify-center  sm:pt-0 pt-24">
-              <MouseScroll/>
-        </div>
+            <MouseScroll />
+          </div>
         </section>
       </section>
     </div>

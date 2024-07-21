@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import ServicesSvg from "../assets/icons/services.svg";
-import Button from "../components/button/Button";
+import React from "react";
 import ServiceCard from "../components/services/ServiceCard";
 import architectSvg from "../assets/icons/services Icon/architect.svg";
-import $ from "jquery";
 import "./ServicePage.css";
 import PageHeader from "../components/pageHeader/PageHeader";
 
@@ -79,7 +76,7 @@ function ServicesPage() {
     <div className=" pt-12 h-[165vh]  sm:px-12 sm:pt-12 relative overflow-clip sm:w-screen sm:h-screen bg-[#F8F8F5]">
    <PageHeader {...serviceProps}/>
 
-      <div className="flex flex-wrap px-6 sm:px-0 gap-1">
+      <div className="flex flex-wrap px-6 sm:px-0 gap-1 2xl:mt-10 3xl:mt-0 ">
         {services.map((service) => (
           <ServiceCard key={service.serviceTitle} {...service} />
         ))}

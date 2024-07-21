@@ -21,7 +21,7 @@ function Contact() {
     <div id="mainContainer" className="h-screen w-screen bg-[#141414]">
       {/* Moving animation Component */}
       <div className="carousel-container bg-[#141414] ">
-        <ul className="carousel-track">
+        <ul className="carousel-track ">
           {Array.from({ length: 6 }).map((_, index) => (
             <li key={index} className="carousel-slide">
               <div className="parent-p">

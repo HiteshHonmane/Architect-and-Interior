@@ -24,7 +24,7 @@ function Home() {
     <div className=" relative h-[100vh] w-[100vw] overflow-hidden">
       {/* Navbar */}
       <nav
-        className={`bg-white shadow-lg flex justify-center items-center w-full h-[100vh] fixed z-40 transition-all duration-1000 ease-in-out   ${navVisible ? "translate-x-0" : "-translate-x-full"
+        className={`bg-white shadow-lg flex justify-center items-center w-full h-[100vh] fixed z-40 transition-all duration-1000 ease-in-out mt-[4vh]   ${navVisible ? "translate-x-0" : "-translate-x-full"
           }`}
       >
         <div className="container mx-auto px-6 py-3 flex justify-center">
@@ -41,9 +41,7 @@ function Home() {
                   SERVICES
                 </span>
                 <div className="ml-4">
-                  <a href="#" className={SUB_NAV_LINK_CLASSES}>
-                    ALL
-                  </a>
+                  
                   <a href="#" className={SUB_NAV_LINK_CLASSES}>
                     ARCHITECTURAL DESIGN
                   </a>
@@ -64,12 +62,6 @@ function Home() {
                   </a>
                   <a href="#" className={SUB_NAV_LINK_CLASSES}>
                     LIGHTING DESIGN
-                  </a>
-                  <a href="#" className={SUB_NAV_LINK_CLASSES}>
-                    FEASIBILITY STUDIES
-                  </a>
-                  <a href="#" className={SUB_NAV_LINK_CLASSES}>
-                    BUILDING CODE COMPLIANCE
                   </a>
                   <a href="#" className={SUB_NAV_LINK_CLASSES}>
                     3D VISUALIZATION
@@ -171,7 +163,7 @@ function Home() {
               <Button name={"VIEW PROJECTS"} />
             </div>
           </div>
-          <div className=" flex justify-center  sm:pt-0 pt-24">
+          <div className=" flex justify-center   pt-[10px]">
             <MouseScroll />
           </div>
         </section>
